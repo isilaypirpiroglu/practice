@@ -1,0 +1,10 @@
+# Slurm job logs
+slurm-*.out
+
+# Neuroimaging data (never commit data; it lives on /ptmp)
+*.nii
+*.nii.gz
+
+# Python / Jupyter clutter
+__pycache__/
+.ipynb_checkpoints/
