@@ -6,7 +6,9 @@ My practice repo for learning the fMRI workflow on Nyx
 ## What is in here
 
 - `scripts/motion_correct.sh`: motion correction of one run with FSL mcflirt (runs inside the container)
-- `slurm/motion_correct.sbatch`: the same as a Slurm job (not submitted yet)
+- `slurm/motion_correct.sbatch`: the same as a Slurm job (submitted once, it ran fine)
+- `notebooks/inspect_motion_corrected.ipynb`: mean image, brain mask and carpet plot of the corrected data (needs the conda env)
+- `environment.yml`: the conda env (python 3.10, numpy, pandas, scipy, matplotlib, nilearn, nibabel, jupyter, ipykernel)
 - `fmri_analysis/`: submodule from dchaimow (read-only, I don't change it)
 
 ## Data (not in git)
@@ -17,10 +19,11 @@ My practice repo for learning the fMRI workflow on Nyx
 ## Software
 
 - Container: `/home/rglz/containers/gfae.sif` (FSL, AFNI, ...). The exact file name I used is in the sbatch file
-- Conda env: `/ptmp/ipirpiroglu/bids_data/env`
+- Conda env: `/ptmp/ipirpiroglu/bids_data/env` (spec in `environment.yml`)
 
 ## Notes to myself
 
 - Downloads and git push on the login node, computing on a compute node
+- fsleyes only works from the login node (Remote Desktop), not from a compute node
 - Check `git status` before `git add`
 - Never commit data or slurm-*.out files
