@@ -1,0 +1,14 @@
+name: /ptmp/ipirpiroglu/bids_data/env
+channels:
+  - conda-forge
+dependencies:
+  - ipykernel
+  - jupyter
+  - matplotlib
+  - nibabel
+  - nilearn
+  - numpy
+  - pandas
+  - python=3.10
+  - scipy
+prefix: /ptmp/ipirpiroglu/bids_data/env
