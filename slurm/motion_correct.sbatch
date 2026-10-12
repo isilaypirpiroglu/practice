@@ -4,9 +4,10 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=compute
-#SBATCH --time=02:00:00
+#SBATCH --time=00:15:00
 #SBATCH --mem=8G
 # (all #SBATCH lines must come before the first command)
+# time: the interactive test run took 50 s (2026-10-12), 15 min leaves a wide margin
 
 # Container: full resolved file name (gfae.sif pointed to this on 2026-10-11)
 SIF=/home/rglz/containers/gfae_20261004T113948Z_md5a8d5ea248cb593fd5a2155d8c5dfadca_gitb01e1f135f0a8ce653c53fae298bddffe09a247b.sif
